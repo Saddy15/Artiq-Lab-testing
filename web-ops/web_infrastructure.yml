@@ -58,7 +58,7 @@
     copy:
       src: node.service
       dest: /etc/systemd/system/node.service
-      notify: systemd-reload
+     notify: systemd-reload
 
   handlers:
   - name: systemd-reload
