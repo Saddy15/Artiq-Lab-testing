@@ -1,0 +1,7 @@
+---
+- hosts: win 
+  tasks: 
+  - name: Remove a service
+    ansible.windows.win_service:
+      name: service name
+      state: absent
