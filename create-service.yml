@@ -1,0 +1,9 @@
+---
+- hosts: win 
+  tasks: 
+  - name: Create a new service with extra details
+    ansible.windows.win_service:
+      name: service name
+      path: C:\temp\test.exe
+      display_name: Service Name
+      description: A test service description
